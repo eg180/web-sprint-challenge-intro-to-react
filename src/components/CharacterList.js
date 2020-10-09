@@ -34,7 +34,7 @@ export default function CharacterList() {
 
     return(
 
-        <div>
+        <div className="character-pic-border">
             {charsFromObjectArray.map((chars, id) => {
                 return <Character key={id} chars={chars} />;
             })}

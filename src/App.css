@@ -5,4 +5,9 @@
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
 }
+
+.character-profile {
+  max-width: 65%;
+  margin: auto;
+}
 /* write your parent styles in here for your App.js */
