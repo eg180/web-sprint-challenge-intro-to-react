@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
-import Axios from 'axios';
+import React from 'react';
 import './App.css';
-import { BASE_URL } from './static/locker'
+import CharacterList from './components/CharacterList'
 
 const App = () => {
 
@@ -13,26 +12,10 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
-
-  useEffect(()=> {
-    fetchData()
-  }, []);
-
-
-  const fetchData = () => {
-      Axios.get(`${BASE_URL}`)
-      .then((res)=> {
-          /// do stuff here
-          console.log(res)
-      })
-      .catch((err)=> {
-          console.log(err)
-      })
-  }
-
   return (
     <div className="App">
       <h1 className="Header">Characterds</h1>
+      <CharacterList />
     </div>
   );
 }

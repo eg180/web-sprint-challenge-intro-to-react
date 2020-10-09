@@ -3,10 +3,15 @@ import React from 'react'
 
 
 
-export default function Player(props) {
-    const {} = props;
-
-
-
-    return (null)
+export default function Character(props) {
+    
+    return(
+        <div>
+            <h1>{props.chars.name}</h1>
+            <img src={props.chars.image}> </img>
+            <p>{props.chars.gender}</p>
+            <p>{props.chars.status}</p>
+        </div>
+        
+    )
 }
