@@ -1,8 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Ruge+Boogie&display=swap');
+
 .App {
   text-align: center;
+  /* background-image: url('./images/rm-bg.jpg'); */
+  background-color: rgb(177, 149, 149);
+  font-family: 'Ruge Boogie', cursive;
+  font-size: 1.25rem;
+
 }
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+
 .Header {
   color: #443e3e;
   text-shadow: 1px 1px 5px #fff;
+  
 }
+
+.character-pic-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.character-profile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(54, 203, 91);
+  max-width: 80%;
+  margin: 2rem;
+  padding: 2rem;
+  
+  
+}
+
+
+
+h2 {
+  background-color: rgb(232, 227, 233);
+  max-width: 100%;
+  margin: 2rem;
+  padding: 5rem;
+}
+
+.character-profile-container img {
+  max-width: 100%;
+  border-radius: 25%;
+  
+}
+
+
+.photo-and-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+}
+
+.label {
+  font-weight: 700;
+  font-family: 'Cabin Sketch', cursive;
+}
+
+.vitals {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 2rem;
+  background-color: rgb(137, 216, 64);
+}
+
+
 /* write your parent styles in here for your App.js */
